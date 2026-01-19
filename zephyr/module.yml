@@ -1,3 +1,5 @@
+name: zmk-keyboard-rev57lp
+
 build:
   settings:
     board_root: .
