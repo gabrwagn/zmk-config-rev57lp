@@ -22,7 +22,3 @@ include:
 # wireless rev57lp
   - board: nice_nano
     shield: rev57lp
-  - board: nice_nano
-    snippet: zmk-usb-logging
-    artifact-name: rev57lp_with_logging
-    shield: rev57lp
