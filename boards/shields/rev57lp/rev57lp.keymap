@@ -25,6 +25,21 @@
         };
     };
 
+    behaviors {
+        gui_a: gui_a {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp LC(A)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+        gui_d: gui_d {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp LA(D)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+    };
+
     /* macros { */
     /*     forty_two: forty_two { */
     /*         label = "ZM_forty_two"; */
@@ -75,7 +90,7 @@
             bindings = <
               &kp GRAVE    &kp N1  &kp N2  &kp N3     &kp N4     &kp N5                                &kp N6     &kp N7    &kp N8       &kp N9      &kp N0      &kp GRAVE
               &kp ESC      &kp Q   &kp W   &kp E      &kp R      &kp T                                 &kp Y      &kp U     &kp I        &kp O       &kp P       &kp BACKSPACE
-              &kp TAB      &kp A   &kp S   &kp D      &kp F      &kp G         &kp LA(L)               &kp H      &kp J     &kp K        &kp L       &kp SEMI    &kp SINGLE_QUOTE
+              &kp TAB      &gui_a  &kp S   &gui_d     &kp F      &kp G         &kp LA(L)               &kp H      &kp J     &kp K        &kp L       &kp SEMI    &kp SINGLE_QUOTE
               &kp LSHIFT   &kp Z   &kp X   &kp C      &kp V      &kp B                                 &kp N      &kp M     &kp COMMA    &kp PERIOD  &kp SLASH   &kp RSHIFT
                                            &kp LALT   &kp LGUI   &mo 1  &kp ENTER           &kp SPACE  &mo 2      &kp RCTRL &kp RALT
             >;
