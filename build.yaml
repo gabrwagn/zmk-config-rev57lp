@@ -20,5 +20,5 @@
 ---
 include:
 # wireless rev57lp
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: rev57lp

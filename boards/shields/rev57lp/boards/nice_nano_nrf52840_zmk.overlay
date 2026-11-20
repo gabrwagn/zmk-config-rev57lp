@@ -1,0 +1,8 @@
+/* LEDs are not working, so VCC (ext power, P0.13) is held off permanently. */
+&gpio0 {
+    vcc_off {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+    };
+};
